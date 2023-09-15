@@ -1,0 +1,35 @@
+.vantagens-titulo{
+    margin: 5.25rem 0;
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1.8rem;
+    margin-bottom: 13.5rem;
+}
+
+.card{
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+    max-width: 21.3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card-texto{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-principal);
+    margin:  2rem 2.68rem;
+    text-align: center;
+}
+
+.imagem-card{
+    margin-top: 1rem;
+}

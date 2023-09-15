@@ -1,0 +1,23 @@
+.header{
+    background-color: var(--verde);
+}
+
+.nav-link{
+    font-size: var(--tamanho-fonte);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+}
+
+.cabecalho-titulo-destaque{
+    font-weight: 700;
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-secundario);
+    margin-left: 10px;
+}
+
+.cabecalho-titulo{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-secundario);
+    color: var(--branco);
+}

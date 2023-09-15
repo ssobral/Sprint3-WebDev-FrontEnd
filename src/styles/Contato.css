@@ -1,0 +1,49 @@
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-titulo{
+    font-size:45px;
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+    text-align: center;
+    margin: 8rem 0 5rem 0;
+}
+
+.contato-texto{
+    font-size: 20px;
+    font-family: var(--fonte-secundario);
+    text-align: center;
+}
+
+.contato-dados{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.contato-info{
+    display: flex;
+    gap: 2rem;
+}
+
+.contato-mensagem{
+    resize: none;
+    height: 150px;
+}
+
+.contato-button{
+    background-color: var(--verde);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--branco);
+    padding: 1.5rem 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.contato-button:hover{
+    color: var(--verde);
+    border: 0.8px solid var(--verde);
+}

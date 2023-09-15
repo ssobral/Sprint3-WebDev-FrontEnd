@@ -1,0 +1,117 @@
+.armario-titulo{
+    margin: 5.25rem 0;
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+    text-align: center;
+}
+
+.armario-form-titulo{
+    margin: 3.25rem 0;
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+    text-align: center;
+}
+
+.armario-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.armario-form-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap:2rem;
+    width: 400px;
+}
+
+.armario-form-datas{
+    display: flex;
+    gap: 2rem;
+}
+
+.armario-form-embalagem::placeholder{
+    color: var(--verde);
+
+}
+
+.armario-form-nome::placeholder{
+    color: var(--verde); 
+}
+
+.armario-form-datas-data::placeholder{
+    color: var(--verde);
+}
+
+.armario-form-datas-titulo{
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.25rem;
+}
+
+.armario-form-button{
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    margin: 3rem;
+}
+
+.armario-form-button:hover{
+    color: var(--verde);
+    border: 0.8px solid var(--verde);
+}
+
+.armario-tabela-item{
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+.armario-table-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.armario-table-titulo{
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+
+}
+
+.armario-table{
+    grid-area: tab;
+    width: 1200px;
+}
+
+.armario-table-title{
+    color: var(--verde);
+}
+
+@media screen and (max-width: 1250px){
+    .armario-table{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .armario-form-datas{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .armario-form-datas{
+        flex-wrap: wrap;
+    }
+    .armario-table{
+        width: 400px;
+    }
+}

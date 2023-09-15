@@ -1,0 +1,46 @@
+.login{
+    background: linear-gradient(256deg, #D6D6D6 0%, #5CB697 23.26%, #60AE94 47.22%, #2D9471 75.87%, #2D9471 99.31%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 2rem 4rem;
+}
+
+.login-button{
+    background-color: var(--verde);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--branco);
+    padding: 0.8rem 2rem;
+    margin: 2rem 0;
+}
+
+.login-button:hover{
+    color: var(--verde);
+    border: 0.8px solid var(--verde);
+}
+
+.login-card-title{
+    font-size: 40px;
+    font-family: var(--fonte-secundario);
+    font-weight: 700;
+}
+
+.texto-cadastro{
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-principal);
+}
+
+.texto-cadastro-cadastre_se{
+    color: var(--verde);
+}

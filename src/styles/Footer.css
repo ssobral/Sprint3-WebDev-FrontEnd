@@ -1,0 +1,18 @@
+.footer{
+    background-color: var(--branco);
+    align-items: center;
+    border-top: 1px solid var(--verde);
+}
+
+.footer-link{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: var(--verde);
+}
+
+.coluna{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

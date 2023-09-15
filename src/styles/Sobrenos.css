@@ -1,0 +1,32 @@
+.sobre_nos-logo{
+    width: 19.8rem;
+    height: 21.3rem;
+}
+
+.sobre_nos{
+    display: flex;
+    margin: 5.3rem;
+}
+
+.sobre_nos-textos-titulo{
+    font-family: var(--fonte-secundario);
+    font-size: var(--tamanho-fonte-titulo);
+    font-weight: 700;
+    margin: 1.2rem 0 3.2rem 0;
+}
+
+.sobre_nos-textos-texto{
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-principal);
+}
+
+@media screen and (max-width: 720px) {
+    .sobre_nos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sobre_nos-logo{
+        width: 188px;
+        height: 188px;
+    }
+}
