@@ -1,4 +1,5 @@
 import { } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Login() {
 
@@ -16,8 +17,8 @@ function Login() {
                         <label for="inputPassword5" class="form-label">Password</label>
                         <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required="required"></input>
                     </div>
-                    <button type="submit" class="btn login-button" onClick={() => { verificacao() }}>Entrar</button>
-                    <p className='texto-cadastro'>Se não possue conta <strong className='texto-cadastro-cadastre_se'>Cadastre-se!</strong></p>
+                    <button type="submit" class="btn login-button">Entrar</button>
+                    <p className='texto-cadastro'>Se não possue conta <NavLink to="/Cadastro" className="texto-cadastro-cadastre_se">Cadastre-se!</NavLink></p>
                 </form>
             </div>
         </>

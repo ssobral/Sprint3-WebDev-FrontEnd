@@ -9,6 +9,7 @@
 @import url(./styles/Armario.css);
 @import url(./styles/Contato.css);
 @import url(./styles/Login.css);
+@import url(./styles/Cadastro.css);
 
 :root{
     --branco: #FFFFFF;

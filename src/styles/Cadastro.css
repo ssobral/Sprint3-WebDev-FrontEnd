@@ -1,0 +1,77 @@
+.cadastro-enfeite{
+    display: flex;
+    align-items: center;
+}
+
+.cadastro-enfeite-img{
+    width: 15rem;
+}
+
+.cadastro-enfeite-texto{
+    font-size: var(--tamanho-fonte);
+    font-family: var(--fonte-principal);
+}
+
+.cadastro-dados{
+    display: flex;
+    gap: 1rem;
+}
+
+.cadastro-senhas{
+    display: flex;
+    gap: 1rem;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(256deg, #D6D6D6 0%, #5CB697 23.26%, #60AE94 47.22%, #2D9471 75.87%, #2D9471 99.31%);
+    height: auto;
+}
+
+.cadastro-card{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    background-color: var(--branco);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.cadastro-button{
+    background-color: var(--verde);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--branco);
+    padding: 0.8rem 2rem;
+    margin: 2rem 0;
+
+}
+
+.cadastro-button:hover{
+    color: var(--verde);
+    border: 0.8px solid var(--verde);
+}
+
+@media screen and (max-width: 720px){
+    .cadastro-card{
+        padding: 2rem 1rem;
+        margin: 0.8rem;
+    }
+    .cadastro-enfeite{
+        flex-direction: column;
+    }
+    .cadastro-dados{
+        flex-direction: column;
+    }
+    .cadastro-senhas{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .cadastro-dados{
+        flex-direction: column;
+    }
+}
