@@ -14,6 +14,8 @@
     width: auto;
     height: auto;
     padding: 2rem 4rem;
+    border-radius: 10px;
+    margin-top: 10rem;
 }
 
 .login-button{
@@ -36,11 +38,18 @@
     font-weight: 700;
 }
 
-.texto-cadastro{
+.texto-login-cadastro{
     font-size: var(--tamanho-fonte);
     font-family: var(--fonte-principal);
 }
 
 .texto-cadastro-cadastre_se{
     color: var(--verde);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px){
+    .login-card{
+        padding: 2rem;
+    }
 }
