@@ -8,7 +8,8 @@ import Enfeite from './assets/Enfeite.svg';
 import Enfeite2 from './assets/Enfeite2.svg';
 import ImagemIngredientes from './assets/ImagemIngredientes.svg';
 import ImagemReceitas from './assets/ImagemReceitas.svg';
-import ImagemRuas from './assets/ImagemRuas.svg';
+import Ruas from './assets/Ruas.svg';
+
 
 function Home(){
     return(
@@ -86,7 +87,7 @@ function Home(){
                     <p className="card-texto">Controle seus ingredientes</p>
                 </div>
                 <div className="card">
-                    <img src={ImagemRuas} alt="Imagem-Ajude a limpar as ruas" className="imagem-card"></img>
+                    <img src={Ruas} alt="Imagem-Ajude a limpar as ruas" className="imagem-card"></img>
                     <p className="card-texto">Ajude a limpar as ruas</p>
                 </div>
             </div>
