@@ -58,7 +58,7 @@
     background-color: var(--verde);
     color: var(--branco);
     font-family: var(--fonte-principal);
-    margin: 3rem;
+    margin-bottom: 3rem;
 }
 
 .armario-form-button:hover{
@@ -94,6 +94,36 @@
     color: var(--verde);
 }
 
+.armario-form-quantidade{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantidade-dados{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.quantidade-button{
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
+
+.quantidade-button:hover{
+    color: var(--verde);
+    border: 0.8px solid var(--verde);
+}
+
+
+.quantidade-valor{
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--fonte-principal);
+    margin-bottom: 0;
+}
 @media screen and (max-width: 1250px){
     .armario-table{
         width: 700px;

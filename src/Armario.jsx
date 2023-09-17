@@ -1,6 +1,18 @@
-import { } from 'react'
+import { useState } from 'react';
+
 
 function Armario() {
+
+    const [Quantidade, setContador] = useState(0);
+
+    const aumentar = () => setContador(Quantidade + 1);
+    const diminuir = () => setContador(Quantidade - 1);
+
+    var dataAtual = new Date();
+    var dataEspecifica = new Date('2028-07-01');
+    var diferencaEmMilissegundos = dataEspecifica - dataAtual;
+    var diferencaEmDias = Math.floor(diferencaEmMilissegundos / (1000 * 60 * 60 * 24));
+
 
     return (
         <>
@@ -19,8 +31,15 @@ function Armario() {
                             <input class="form-control armario-form-datas-data" type="number" placeholder="Mês" id='mes' aria-label="default input example"></input>
                             <input class="form-control armario-form-datas-data" type="number" placeholder="Ano" id='ano' aria-label="default input example"></input>
                         </div>
+                        <div className='armario-form-quantidade'>
+                            <div className='quantidade-dados'>
+                                <button onClick={aumentar} className='btn quantidade-button'>Aumentar</button>
+                                <p className='quantidade-valor'>{Quantidade}</p>
+                                <button onClick={diminuir} className='btn quantidade-button'>Diminuir</button>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn armario-form-button" id='btnSubmit'>Enviar</button>
+                    <button type="submit" class="btn armario-form-button" id='btnSubmit' >Enviar</button>
                 </form>
                 <div className='armario-table-info'>
                     <p className='armario-table-titulo'>Seus produtos:</p>
@@ -29,25 +48,18 @@ function Armario() {
                             <tr>
                                 <th scope="col armario-table-title">Nome do produto</th>
                                 <th scope="col armario-table-title">Tipo de embalagem</th>
+                                <th scope="col armario-table-title">Quantidade</th>
                                 <th scope="col armario-table-title">Dia de vencimento do produto</th>
                                 <th scope="col armario-table-title">Tempo útil do produto</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Mark</td>
-                                <td>Jacob</td>
-                                <td>Larry the Bird</td>
-                                <td>Jacob</td>
-                            </tr>
-                            <tr>
-
-                            </tr>
-                            <tr>
-
-                            </tr>
-                            <tr>
-
+                                <td>Arroz</td>
+                                <td>Plástico</td>
+                                <td>2</td>
+                                <td>07/28</td>
+                                <td>{diferencaEmDias} dias</td>
                             </tr>
                         </tbody>
                     </table>

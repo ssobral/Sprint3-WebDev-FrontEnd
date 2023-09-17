@@ -1,4 +1,5 @@
 import {} from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Home(){
     return(
@@ -57,8 +58,8 @@ function Home(){
                 <p className="como_trabalhamos-texto2">E caso a data de validade se aproxime, você receberá a avisos, a forma correta de descarta-lo e a importância disso.</p>
                 <p className="como_trabalhamos-texto3">Para aproveitar nossos benefícios, basta entrar na rede KIT ON:</p>
                 <div className="como_trabalhamos-botoes">
-                    <a className="btn btn-primary como_trabalhamos-button" href="#" role="button">Login</a>
-                    <a className="btn btn-primary como_trabalhamos-button" href="#" role="button">Duvidas</a>
+                    <NavLink className="btn btn-primary como_trabalhamos-button" to="/Login" role="button">Login</NavLink>
+                    <NavLink className="btn btn-primary como_trabalhamos-button" to="/Contato" role="button">Duvidas</NavLink>
                 </div>
             </div>
             <img src="src/assets/Enfeite-2.svg" alt="Enfeite visual" class="como_trabalhamos-enfeite"></img>
