@@ -1,13 +1,13 @@
-import { } from 'react'
-import Nav from './Nav'
-import Login from './Login'
-import Home from './Home'
-import Footer from './Footer'
-import Armario from './Armario'
-import Contato from './Contato'
-import Cadastro from './Cadastro'
-import { BrowserRouter, Routes,Route } from 'react-router-dom'
-import './App.css'
+import { } from 'react';
+import Nav from './Nav';
+import Login from './Login';
+import Home from './Home';
+import Footer from './Footer';
+import Armario from './Armario';
+import Contato from './Contato';
+import Cadastro from './Cadastro';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (

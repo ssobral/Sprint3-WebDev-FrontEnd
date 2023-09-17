@@ -1,4 +1,5 @@
-import { } from 'react'
+import { } from 'react';
+import Logo from './assets/Logo.png';
 
 
 function Cadastro() {
@@ -9,7 +10,7 @@ function Cadastro() {
                 <div className='cadastro-card'>
                     <form className='cadastro-card'>
                         <div className='cadastro-enfeite'>
-                            <img src='src/assets/Logo.png' className='cadastro-enfeite-img'></img>
+                            <img src={Logo} className='cadastro-enfeite-img'></img>
                             <p className='cadastro-enfeite-texto'>Sejá bem-vindo a KIT ON!</p>
                         </div>
                         <div className='cadastro-dados'>

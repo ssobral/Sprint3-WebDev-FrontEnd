@@ -1,5 +1,6 @@
-import {} from 'react'
-import { NavLink } from 'react-router-dom'
+import {} from 'react';
+import { NavLink } from 'react-router-dom';
+import LogoBranco from './assets/LogoBranco.png'
 
 
 function Nav(){
@@ -7,7 +8,7 @@ function Nav(){
         <>
             <nav className="navbar navbar-expand-lg  header">
                 <div className="container-fluid header">
-                    <NavLink to="/" className="navbar-brand cabecalho-titulo"><img src='./src/assets/logo branco.png' width="50" height="40"></img><strong class="cabecalho-titulo-destaque">KIT</strong> ON</NavLink>
+                    <NavLink to="/" className="navbar-brand cabecalho-titulo"><img src={LogoBranco} width="50" height="40"></img><strong class="cabecalho-titulo-destaque">KIT</strong> ON</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
